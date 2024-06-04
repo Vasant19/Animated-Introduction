@@ -5,39 +5,34 @@
     <animate attributeName="fill" dur="20s" values="#1f6feb; #5cc9a7; #f69256; #1f6feb" repeatCount="indefinite" />
   </rect>
 
+  <!-- Person -->
+  <g id="person">
+    <path fill="#fff" d="M163.2,272.2c-0.4-2.6,0.3-5.2,1.8-7.1c-1.8-1.9-2.3-4.7-1.8-7.1c1-6.5,4.9-12.4,10.5-16c3.6-2.4,7.9-3.7,12.3-3.7c1.3,0,2.7,0.1,4,0.4c4,0.7,7.7,2.7,10.8,5.6c1.5,1.5,3.2,2.9,4.9,4.3c1.7-1.4,3.4-2.8,4.9-4.3c3-3,6.8-5,10.8-5.6c1.3-0.2,2.7-0.4,4-0.4c4.4,0,8.7,1.3,12.3,3.7c5.6,3.6,9.5,9.5,10.5,16c0.5,2.4-0.1,5.2-1.8,7.1c1.5,1.8,2.1,4.2,1.8,6.6c-1,6.5-4.9,12.4-10.5,16c-3.6,2.4-7.9,3.7-12.3,3.7c-1.3,0-2.7-0.1-4-0.4c-4-0.7-7.7-2.7-10.8-5.6c-1.5-1.5-3.2-2.9-4.9-4.3c-1.7,1.4-3.4,2.8-4.9,4.3c-3,3-6.8,5-10.8,5.6c-1.3,0.2-2.7,0.4-4,0.4c-4.4,0-8.7-1.3-12.3-3.7c-5.6-3.6-9.5-9.5-10.5-16C161.1,276.4,162,274.1,163.2,272.2z"/>
+    <ellipse fill="#fff" cx="184.4" cy="260.3" rx="7.8" ry="9.7"/>
+    <ellipse fill="#fff" cx="235.6" cy="260.3" rx="7.8" ry="9.7"/>
+    <path fill="#fff" d="M192,295.6c5.4-0.6,8.3-3.8,9.4-5.8c1.2-2.2,1.1-4.8-0.1-7c-0.5-0.9-1.1-1.7-1.8-2.4c0,0-6.5-6-16.3-5.3c-0.3,0-0.7,0-1,0c-0.3,0-0.7,0-1,0c-9.7-0.7-16.3,5.3-16.3,5.3c-0.7,0.7-1.4,1.5-1.9,2.5c-1.2,2.2-1.3,4.9-0.1,7c1.1,2,3.9,5.2,9.3,5.8c1.4,0.2,3.2,0.4,5.2,0.4C188.8,296,190.6,295.8,192,295.6z"/>
+    <path fill="#fff" d="M245.3,295.6c5.4-0.6,8.3-3.8,9.4-5.8c1.2-2.2,1.1-4.8-0.1-7c-0.5-0.9-1.1-1.7-1.8-2.4c0,0-6.5-6-16.3-5.3c-0.3,0-0.7,0-1,0c-0.3,0-0.7,0-1,0c-9.7-0.7-16.3,5.3-16.3,5.3c-0.7,0.7-1.4,1.5-1.9,2.5c-1.2,2.2-1.3,4.9-0.1,7c1.1,2,3.9,5.2,9.3,5.8c1.4,0.2,3.2,0.4,5.2,0.4C242.1,296,243.9,295.8,245.3,295.6z"/>
+  </g>
+
+  <!-- Chatbot -->
+  <g id="chatbot">
+    <path fill="#7ac96f" d="M607.5,244.9c-20.3-2.4-38.5,12.7-38.5,32.6V349c0,9.8,8.4,17.7,18.5,17.7h64.6c10.2,0,18.5-7.9,18.5-17.7v-71.5C671.6,255.1,646.7,247.4,607.5,244.9z"/>
+    <path fill="#fff" d="M644.1,300.9c-4.8,0-8.8,3.7c-4.8,0-8.8,3.7-8.8,8.2v45.9c0,4.5,4,8.2,8.8,8.2h0.1c4.8,0,8.8-3.7,8.8-8.2v-45.9C652.9,304.6,648.9,300.9,644.1,300.9z"/>
+    <path fill="#4caf50" d="M639.9,317.2c0,2.7,2.3,4.8,5.1,4.8s5.1-2.1,5.1-4.8s-2.3-4.8-5.1-4.8S639.9,314.5,639.9,317.2z"/>
+    <circle fill="#FFD633" cx="623.5" cy="308.7" r="2.5"/>
+    <circle fill="#FFD633" cx="644.1" cy="308.7" r="2.5"/>
+  </g>
+
+  <!-- Animation -->
+  <animateTransform xlink:href="#chatbot" attributeName="transform" type="translate" from="0 0" to="-100 0" dur="2s" begin="2s" fill="freeze" repeatCount="indefinite" />
+
   <!-- Text -->
-  <text x="50%" y="30%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="30" opacity="0">
-    Welcome to My GitHub Profile
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="30" opacity="0">
+    Hi there! I'm your friendly chatbot.
+    <tspan x="50%" dy="1.5em">How can I assist you today?</tspan>
     <animate attributeName="opacity" values="0;1" dur="2s" begin="0s" fill="freeze" />
   </text>
 
-  <!-- Summary Animation -->
-  <text x="50%" y="45%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="18" opacity="0">
-    Adept software developer with extensive knowledge in Full-Stack Development, Cloud Computing, Data Science and Analytics...
-    <animate attributeName="opacity" values="0;1" dur="2s" begin="2s" fill="freeze" />
-  </text>
-
-  <!-- Skills Animation -->
-  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="18" opacity="0">
-    Skills:
-    <animate attributeName="opacity" values="0;1" dur="2s" begin="4s" fill="freeze" />
-  </text>
-
-  <!-- Experience Animation -->
-  <text x="50%" y="70%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="18" opacity="0">
-    Experience:
-    <animate attributeName="opacity" values="0;1" dur="2s" begin="6s" fill="freeze" />
-  </text>
-
-  <!-- Education Animation -->
-  <text x="50%" y="85%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="18" opacity="0">
-    Education:
-    <animate attributeName="opacity" values="0;1" dur="2s" begin="8s" fill="freeze" />
-  </text>
-
-  <!-- Final Animation -->
-  <text x="50%" y="95%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="18" opacity="0">
-    Connect with me: LinkedIn: Vasant Dave GitHub: Vasant Dave
-    <animate attributeName="opacity" values="0;1" dur="2s" begin="10s" fill="freeze" />
-  </text>
+  <!-- Person Animation -->
+  <animateTransform xlink:href="#person" attributeName="transform" type="translate" from="0 0" to="100 0" dur="2s" begin="2s" fill="freeze" repeatCount="indefinite" />
 </svg>
