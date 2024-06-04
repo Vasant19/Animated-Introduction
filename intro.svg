@@ -3,102 +3,38 @@
     .bubble {
       fill: #e9e9eb;
     }
-    a {
-      fill: #0079ff;
-    }
     text {
       fill: #242424;
       font-size: 18px;
       font-family: 'Inter';
       letter-spacing: -0.02em;
     }
-    
-    .emoji {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
-    }
 
-    .typing-1 {
+    .typing {
       opacity: 0;
       animation: fade-in-out 1.5s;
     }
 
-    .msg-1 {
-      animation: wait 1.7s, msg-1 0.2s 1.7s;
+    .msg {
+      animation: wait 1.7s, fade-in 0.2s 1.7s;
     }
 
-    .typing-2 {
-      opacity: 0;
-      animation: wait 2.5s, fade-in-out 1.5s 2.5s;
-    }
-
-    .msg-2 {
-      animation: wait 4.2s, msg-2 0.2s 4.2s;
-    }
-
-    .typing-3 {
-      opacity: 0;
-      animation: wait 5s, fade-in-out 1.5s 5s;
-    }
-
-    .msg-3 {
-      animation: wait 6.7s, msg-3 0.2s 6.7s;
-    }
-
-    .typing-4 {
-      opacity: 0;
-      animation: wait 7.5s, fade-in-out 1.5s 7.5s;
-    }
-
-    .msg-4 {
-      animation: wait 9.2s, msg-4 0.2s 9.2s;
-    }
-
-    .msg-5 {
-      animation: wait 11.7s, msg-5 0.2s 11.7s;
-    }
-
-    .msg-6 {
-      animation: wait 14.2s, msg-6 0.2s 16.7s;
-    }    
-    
-    .typing-5 {
-      opacity: 0;
-      animation: wait 10s, fade-in-out 1.5s 10s;
-    }    
-    
-    .typing-6 {
-      opacity: 0;
-      animation: wait 12.5s, fade-in-out 1.5s 12.5s;
-    }
-
-    .typing-7 {
-      opacity: 0;
-      animation: wait 15s, fade-in-out 1.5s 15s;
-    }
-
-    .msg-7 {
-      animation: wait 16.7s, msg-6 0.2s 14.2s;
-    }    
-    
     @keyframes wait {
-      0%,
-      100% {
+      0%, 100% {
         opacity: 0;
       }
     }
 
     @keyframes fade-in-out {
-      0%,
-      100% {
+      0%, 100% {
         opacity: 0;
       }
-      25%,
-      90% {
+      25%, 90% {
         opacity: 1;
       }
     }
 
-    @keyframes msg-1 {
+    @keyframes fade-in {
       0% {
         opacity: 0;
         transform: translate(10px, 5px);
@@ -108,108 +44,29 @@
         transform: translate(10px, 0);
       }
     }
-
-    @keyframes msg-2 {
-      0% {
-        opacity: 0;
-        transform: translate(10px, 53px);
-      }
-      100% {
-        opacity: 1;
-        transform: translate(10px, 48px);
-      }
-    }
-
-    @keyframes msg-3 {
-      0% {
-        opacity: 0;
-        transform: translate(10px, 125px);
-      }
-      100% {
-        opacity: 1;
-        transform: translate(10px, 120px);
-      }
-    }
-
-    @keyframes msg-4 {
-      0% {
-        opacity: 0;
-        transform: translate(10px, 197px);
-      }
-      100% {
-        opacity: 1;
-        transform: translate(10px, 192px);
-      }
-    }
-
-    @keyframes msg-5 {
-      0% {
-        opacity: 0;
-        transform: translate(10px, 245px);
-      }
-      100% {
-        opacity: 1;
-        transform: translate(10px, 240px);
-      }
-    }
-
-    @keyframes msg-6 {
-      0% {
-        opacity: 0;
-        transform: translate(10px, 293px);
-      }
-      100% {
-        opacity: 1;
-        transform: translate(10px, 288px);
-      }
-    }
-
-    @keyframes msg-7 {
-      0% {
-        opacity: 0;
-        transform: translate(10px, 341px);
-      }
-      100% {
-        opacity: 1;
-        transform: translate(10px, 336px);
-      }
-    }    
-    
-    @media (prefers-color-scheme: dark) {
-      .bubble {
-        fill: #3b3b3d;
-      }
-      text {
-        fill: #dcdcdc;
-      }
-      a {
-        fill: #0c82f9;
-      }
-    }
-
   </style>
-  
-  <defs>
-    <style>
-      /* cyrillic-ext */
-      @font-face {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
- src: url('https://cdn.jsdelivr.net/npm/@fontsource/inter@3.15.0/files/inter-latin-400.woff2');
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-    </style>
-  </defs>
 
-  <g class="bubble">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M400 394.5C406.405 394.5 412 398.556 412 403.5C412 408.443 406.405 412.5 400 412.5H50C22.3858 412.5 0 389.967 0 362.5V25C0 11.1929 11.1929 0 25 0H525C538.807 0 550 11.1929 550 25V362.5C550 389.967 527.614 412.5 500 412.5C493.595 412.5 488 408.444 488 403.5C488 398.556 493.595 394.5 500 394.5H400Z" fill="white"/>
+  <!-- typing -->
+  <g transform="translate(10, 0)" class="typing">
+    <rect x="8.27246" width="69.7276" height="42" rx="20.9774" class="bubble" />
+    <circle cx="13.591" cy="33.091" r="7.68185" class="bubble" />
+    <circle cx="3.54547" cy="41.9547" r="3.54547" class="bubble" />
+
+    <circle cx="27.4778" cy="20.9773" r="5.02275" fill="#999999">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="42.8411" cy="20.9773" r="5.02275" fill="#999999">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1s" begin="0.2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="58.2054" cy="20.9773" r="5.02275" fill="#999999">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1s" begin="0.4s" repeatCount="indefinite" />
+    </circle>
+
   </g>
-  <text x="10" y="30" class="typing-1" opacity="0">Hi there! I'm your friendly chatbot.</text>
-  <text x="10" y="80" class="msg-1" opacity="0">How can I assist you today?</text>
-  <text x="10" y="140" class="typing-2" opacity="0">I can help you with various tasks such as...</text>
-  <text x="10" y="190" class="msg-2" opacity="0">- Providing information about our products</text>
-  <text x="10" y="240" class="msg-3" opacity="0">- Assisting with troubleshooting</text>
-  <text x="10" y="290" class="msg-4" opacity="0">- Answering frequently asked questions</text>
-  <text x="10" y="340" class="msg-5" opacity="0">Feel free to ask me anything!</text>
+
+  <!-- Your name -->
+  <g transform="translate(10, 0)" class="msg bubble">
+    <rect width="170" height="42" rx="18.0355" />
+    <text x="15" y="27">Vasant Dave</text>
+  </g>
 </svg>
