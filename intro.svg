@@ -1,56 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome to My GitHub</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
 
-    .msg {
-      fill: #333;
-    }
-
-    .bubble {
-      stroke: #333;
-      stroke-width: 2;
-    }
-  </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My GitHub</title>
 </head>
+
 <body>
-  <svg width="550" height="398" viewBox="0 0 550 398" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <!-- Background -->
-    <rect width="100%" height="100%" fill="#f0f0f0" />
-    
-    <!-- GitHub logo -->
-    <g transform="translate(10, 10)">
-      <path fill="#333" d="M275 2C134.1 2 24 112.1 24 253c0 101.2 64.2 187.1 153.3 217.5 11.2 2 15.3-4.9 15.3-10.8 0-5.3-0.2-19.3-0.3-38C104 449 95 392.6 95 392.6c-10.6-27.1-25.9-34.3-25.9-34.3-20.8-14.2 1.6-13.9 1.6-13.9 23 1.6 35.2 23.6 35.2 23.6 20.5 35.1 53.7 25 66.8 19.1 2-14.8 8-24.9 14.7-30.6-51.5-5.8-105.7-25.8-105.7-114.6 0-25.2 9-45.8 23.6-61.9-2.4-5.8-10.2-29.3 2.2-61-0.7-1.5-4.7-7.3 1-15.2 0 0 4.8-1.5 15.7 5.9 45.7 25.3 78.9 59.5 78.9 100.5 0 72.7-44.2 134-106 155.6 8.4 4.7 15.8 14 15.8 28.2 0 20.4-0.2 36.9-0.2 41.9 0 6 4 12.9 15.5 10.7C417.8 440.1 482 354.2 482 253 482 112.1 371.9 2 231 2L275 2z"/>
-    </g>
+    <svg width="550" height="398" viewBox="0 0 550 398" xmlns="http://www.w3.org/2000/svg">
+        <!-- Background -->
+        <rect width="100%" height="100%" fill="#f0f0f0" />
 
-    <!-- Intro message -->
-    <g transform="translate(10, 200)" class="msg bubble">
-      <rect width="500" height="72" rx="18.0355" />
-      <text x="15" y="27">Welcome to my GitHub! 🚀</text>
-    </g>
+        <!-- GitHub logo -->
+        <path fill="#333" d="M275 2C134.1 2 24 112.1 24 253c0 101.2 64.2 187.1 153.3 217.5 11.2 2 15.3-4.9 15.3-10.8 0-5.3-0.2-19.3-0.3-38C104 449 95 392.6 95 392.6c-10.6-27.1-25.9-34.3-25.9-34.3-20.8-14.2 1.6-13.9 1.6-13.9 23 1.6 35.2 23.6 35.2 23.6 20.5 35.1 53.7 25 66.8 19.1 2-14.8 8-24.9 14.7-30.6-51.5-5.8-105.7-25.8-105.7-114.6 0-25.2 9-45.8 23.6-61.9-2.4-5.8-10.2-29.3 2.2-61-0.7-1.5-4.7-7.3 1-15.2 0 0 4.8-1.5 15.7 5.9 45.7 25.3 78.9 59.5 78.9 100.5 0 72.7-44.2 134-106 155.6 8.4 4.7 15.8 14 15.8 28.2 0 20.4-0.2 36.9-0.2 41.9 0 6 4 12.9 15.5 10.7C417.8 440.1 482 354.2 482 253 482 112.1 371.9 2 231 2L275 2z" />
 
-    <!-- Description -->
-    <g transform="translate(10, 280)" class="msg bubble">
-      <rect width="500" height="72" rx="18.0355" />
-      <text x="15" y="27">Explore my projects and contributions.</text>
-    </g>
+        <!-- Intro message -->
+        <g transform="translate(10, 200)" class="msg bubble">
+            <rect width="500" height="72" rx="18.0355" fill="#fff" stroke="#333" stroke-width="2" />
+            <text x="15" y="45" fill="#333">Welcome to my GitHub! 🚀</text>
+        </g>
 
-    <!-- GitHub link -->
-    <a href="https://github.com/Vasant19">
-      <text x="200" y="360" class="msg" style="text-decoration: underline;">Visit my GitHub</text>
-    </a>
-  </svg>
+        <!-- Description -->
+        <g transform="translate(10, 280)" class="msg bubble">
+            <rect width="500" height="72" rx="18.0355" fill="#fff" stroke="#333" stroke-width="2" />
+            <text x="15" y="45" fill="#333">Explore my projects and contributions.</text>
+        </g>
+
+        <!-- GitHub link -->
+        <a href="https://github.com/Vasant19">
+            <text x="200" y="360" class="msg" style="text-decoration: underline;">Visit my GitHub</text>
+        </a>
+    </svg>
 </body>
+
 </html>
