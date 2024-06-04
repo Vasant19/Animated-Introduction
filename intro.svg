@@ -1,4 +1,11 @@
 <svg width="550" height="398" viewBox="0 0 550 398" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <pattern id="background" patternUnits="userSpaceOnUse" width="100%" height="100%">
+      <image xlink:href="https://via.placeholder.com/550x398" x="0" y="0" width="550" height="398" />
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#background)" />
+
   <style>
     .bubble {
       fill: #e9e9eb;
@@ -64,8 +71,20 @@
 
   </g>
 
+  <!-- Welcome message -->
+  <g transform="translate(10, 70)" class="msg bubble">
+    <rect width="280" height="72" rx="18.0355" />
+    <text x="15" y="27">Welcome to my GitHub!</text>
+  </g>
+
+  <!-- Description -->
+  <g transform="translate(10, 150)" class="msg bubble">
+    <rect width="380" height="72" rx="18.0355" />
+    <text x="15" y="27">Feel free to explore my projects</text>
+  </g>
+
   <!-- Your name -->
-  <g transform="translate(10, 0)" class="msg bubble">
+  <g transform="translate(10, 230)" class="msg bubble">
     <rect width="170" height="42" rx="18.0355" />
     <text x="15" y="27">Vasant Dave</text>
   </g>
