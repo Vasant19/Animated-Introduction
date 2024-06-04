@@ -15,12 +15,9 @@
     <!-- Description -->
     <g transform="translate(10, 280)" class="msg bubble" opacity="0">
         <rect width="500" height="72" rx="18.0355" fill="#fff" stroke="#333" stroke-width="2" />
-        <text x="15" y="45" fill="#333">Explore my projects and contributions.</text>
+        <text x="15" y="45" fill="#333">Feel free to Explore my projects and contributions.</text>
         <animate attributeName="opacity" from="0" to="1" dur="1s" begin="1s" fill="freeze" />
     </g>
 
-    <!-- GitHub link -->
-    <a href="https://github.com/Vasant19">
-        <text x="200" y="360" class="msg" style="text-decoration: underline;">Visit my GitHub</text>
-    </a>
+   
 </svg>
