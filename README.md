@@ -1,8 +1,9 @@
-# Animated-Introduction
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200" width="500" height="200">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#1f6feb" />
 
-👋 Hello, curious minds! 
-🤖 Welcome to my AI Playground! 
-🌟 Where algorithms dance and data sings. 
-🔍 Exploring the wonders of AI, one line of code at a time. 
-💡 Ready to embark on a journey of innovation and discovery? 
-🚀 Let's dive into the world of Artificial Intelligence together! 
+  <!-- Text -->
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="30">
+    Welcome to My GitHub Profile
+  </text>
+</svg>
