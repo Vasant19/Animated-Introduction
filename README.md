@@ -1,1 +1,1 @@
-![Alt text](Animated-Introduction/intro.svg)
+![Introduction](Animated-Introduction/intro.svg)
