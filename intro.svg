@@ -15,10 +15,6 @@
       margin: 0;
     }
 
-    svg {
-      background-color: #f0f0f0;
-    }
-
     .msg {
       fill: #333;
     }
@@ -31,12 +27,13 @@
 </head>
 <body>
   <svg width="550" height="398" viewBox="0 0 550 398" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
     <rect width="100%" height="100%" fill="#f0f0f0" />
     
     <!-- Your name -->
     <g transform="translate(10, 230)" class="msg bubble">
       <rect width="170" height="42" rx="18.0355" />
-      <text x="15" y="27">Hi , My name is Vasant</text>
+      <text x="15" y="27">Hi , my name is Vasant</text>
     </g>
 
     <!-- Welcome message -->
