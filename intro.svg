@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <!-- Background Animation -->
+  <rect width="100%" height="100%" fill="#1f6feb" />
+  <rect width="100%" height="100%">
+    <animate attributeName="fill" dur="20s" values="#1f6feb; #5cc9a7; #f69256; #1f6feb" repeatCount="indefinite" />
+  </rect>
+
+  <!-- Text -->
+  <text x="50%" y="30%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="30" opacity="0">
+    Welcome to My GitHub Profile
+    <animate attributeName="opacity" values="0;1" dur="2s" begin="0s" fill="freeze" />
+  </text>
+
+  <!-- Summary Animation -->
+  <text x="50%" y="45%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="18" opacity="0">
+    Adept software developer with extensive knowledge in Full-Stack Development, Cloud Computing, Data Science and Analytics...
+    <animate attributeName="opacity" values="0;1" dur="2s" begin="2s" fill="freeze" />
+  </text>
+
+  <!-- Skills Animation -->
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="18" opacity="0">
+    Skills:
+    <animate attributeName="opacity" values="0;1" dur="2s" begin="4s" fill="freeze" />
+  </text>
+
+  <!-- Experience Animation -->
+  <text x="50%" y="70%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="18" opacity="0">
+    Experience:
+    <animate attributeName="opacity" values="0;1" dur="2s" begin="6s" fill="freeze" />
+  </text>
+
+  <!-- Education Animation -->
+  <text x="50%" y="85%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="18" opacity="0">
+    Education:
+    <animate attributeName="opacity" values="0;1" dur="2s" begin="8s" fill="freeze" />
+  </text>
+
+  <!-- Final Animation -->
+  <text x="50%" y="95%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif" font-size="18" opacity="0">
+    Connect with me: LinkedIn: Vasant Dave GitHub: Vasant Dave
+    <animate attributeName="opacity" values="0;1" dur="2s" begin="10s" fill="freeze" />
+  </text>
+</svg>
